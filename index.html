@@ -6,11 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>estacionamento</title>
   </head>
-  <body class="bg-blue-500">
-    <div id="app">
-      <h3 class="text-blue-200">Sistema de Controle de Estacionamento</h3>
-      <p>Seja bem vindo!</p>
+  <body class="bg-blue-100 flex items-center justify-center">
+    <div class="bg-blue-200 p-8 rounded-xl shadow-lg">
+      <h1 class="text-2xl font-bold text-slate-800">🔑Controle de Acesso</h1>
+      <p class="text-slate-500">Entre com as suas credenciais</p>
+      <!--formulário-->
+      <form id="login-form">
+        <!--email-->
+        <label class="block text-sm font-medium text-slate-700 my-3">E-mail</label>
+        <input type="email" id="email" required autofocus class="w-full border border-slate-500 rounded-md p-2">
+        <!--senha-->
+        <label class="block text-sm font-medium text-slate-700 my-3">Senha</label>
+        <input type="password" id="password" required class="w-full border border-slate-500 rounded-md p-2">
+        <!--botão-->
+        <button id="acessar" type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md mt-4 hover:bg-orange-600">Acessar o sistema</button>
+       </form>
+       <!--mensagens-->
+       <div id="message" class="mt-4 text-center text-sm text-red-500 bg-red-100 p-4 rounded-xl hidden"></div>
     </div>
+   
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
